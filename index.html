@@ -1,21 +1,268 @@
 <html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
 <body>
-<h2>Separated audio signals by DUET-ISR algorithm</h2>
+<h3>This page shows demo of our proposed algorithms submitted to ICASSP 2022 and other blind source separation algorithms.</h3>
+<h2>Two mixtures of two sources example</h1>
+<h3>Original source signals</h2>
 <ul>
-	<li><p> demix1:</p><audio controls autoplay>
-  <source src="./duet-isr/demixed1.wav" type="audio/ogg">
-Your browser does not support the audio element.
-</audio></li>
-	<li><p> demix2:</p><audio controls autoplay>
-  <source src="./duet-isr/demixed2.wav" type="audio/ogg">
-Your browser does not support the audio element.
-</audio></li>
-	<li><p> demix3:</p><audio controls autoplay>
-  <source src="./duet-isr/demixed3.wav" type="audio/ogg">
-Your browser does not support the audio element.
-</audio></li>
-</ul> 
+  <li><a href="./2mix2src130ms/sources/1.wav">src1</a></li>
+  <li><a href="./2mix2src130ms/sources/2.wav">src2</a></li>
+</ul>
+<h3>Live recorded mixtures (reverb=130ms)</h2>
+<ul>
+  <li><a href="./2mix2src130ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix2src130ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h2>
 
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>IVA [2]</th>
+	<th>ILRMA [3]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix2src130ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src130ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src130ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src130ms/iva/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src130ms/ilrma/demixed1.wav">demix1</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix2src130ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src130ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src130ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src130ms/iva/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src130ms/ilrma/demixed2.wav">demix2</a></td>
+</table>
+
+<h3>Live recorded mixtures (reverb=250ms)</h2>
+<ul>
+  <li><a href="./2mix2src250ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix2src250ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h3>
+
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>IVA [2]</th>
+	<th>ILRMA [3]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix2src250ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src250ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src250ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src250ms/iva/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix2src250ms/ilrma/demixed1.wav">demix1</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix2src250ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src250ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src250ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src250ms/iva/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix2src250ms/ilrma/demixed2.wav">demix2</a></td>
+  </tr>
+</table>
+
+<h2>Two mixtures of three sources example</h2>
+<h3>Original source signals</h3>
+<ul>
+  <li><a href="./2mix3src130ms/sources/1.wav">src1</a></li>
+  <li><a href="./2mix3src130ms/sources/2.wav">src2</a></li>
+  <li><a href="./2mix3src130ms/sources/3.wav">src3</a></li>
+</ul>
+<h3>Live recorded mixtures (reverb=130ms)</h3>
+<ul>
+  <li><a href="./2mix3src130ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix3src130ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h3>
+
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>MULTI_NMF [4]</th>
+	<th>FULLRANK [5]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix3src130ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src130ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src130ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src130ms/multi_nmf/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src130ms/fullrank/demixed1.wav">demix1</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix3src130ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src130ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src130ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src130ms/multi_nmf/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src130ms/fullrank/demixed2.wav">demix2</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix3src130ms/duet-mvdr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src130ms/duet-isr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src130ms/duet/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src130ms/multi_nmf/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src130ms/fullrank/demixed3.wav">demix3</a></td>
+  </tr>
+</table>
+
+<h3>Live recorded mixtures (reverb=250ms)</h3>
+<ul>
+  <li><a href="./2mix3src250ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix3src250ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h3>
+
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>MULTI_NMF [4]</th>
+	<th>FULLRANK [5]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix3src250ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src250ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src250ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src250ms/multi_nmf/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix3src250ms/fullrank/demixed1.wav">demix1</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix3src250ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src250ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src250ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src250ms/multi_nmf/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix3src250ms/fullrank/demixed2.wav">demix2</a></td>
+  </tr>
+  <tr>
+	<td><a href="./2mix3src250ms/duet-mvdr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src250ms/duet-isr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src250ms/duet/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src250ms/multi_nmf/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix3src250ms/fullrank/demixed3.wav">demix3</a></td>
+  </tr>
+</table>
+
+<h2>Two mixtures of four sources example</h2>
+<h3>Original source signals</h3>
+<ul>
+  <li><a href="./2mix4src130ms/sources/1.wav">src1</a></li>
+  <li><a href="./2mix4src130ms/sources/2.wav">src2</a></li>
+  <li><a href="./2mix4src130ms/sources/3.wav">src3</a></li>
+  <li><a href="./2mix4src130ms/sources/4.wav">src4</a></li>
+</ul>
+<h3>Live recorded mixtures (reverb=130ms)</h3>
+<ul>
+  <li><a href="./2mix4src130ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix4src130ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h3>
+
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>MULTI_NMF [4]</th>
+	<th>FULLRANK [5]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix4src130ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src130ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src130ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src130ms/multi_nmf/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src130ms/fullrank/demixed1.wav">demix1</a></td>
+  </tr>
+  <tr>
+	<td><a href="./2mix4src130ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src130ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src130ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src130ms/multi_nmf/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src130ms/fullrank/demixed2.wav">demix2</a></td>
+  </tr>
+  <tr>
+	<td><a href="./2mix4src130ms/duet-mvdr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src130ms/duet-isr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src130ms/duet/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src130ms/multi_nmf/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src130ms/fullrank/demixed3.wav">demix3</a></td>
+  </tr>
+  <tr>
+	<td><a href="./2mix4src130ms/duet-mvdr/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src130ms/duet-isr/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src130ms/duet/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src130ms/multi_nmf/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src130ms/fullrank/demixed4.wav">demix4</a></td>
+   </tr>
+</table>
+
+<h3>Live recorded mixtures (reverb=250ms)</h3>
+<ul>
+  <li><a href="./2mix4src250ms/mixtures/mixture1.wav">mix_ch1</a></li>
+  <li><a href="./2mix4src250ms/mixtures/mixture2.wav">mix_ch2</a></li>
+</ul>
+<h3>Separated audio signals by different blind source separation algorithms</h3>
+
+<table style="width:100%">
+  <tr>
+	<th>DUET-MVDR (proposed)</th>
+	<th>DUET-ISR (proposed)</th>
+	<th>DUET [1]</th>
+	<th>MULTI_NMF [4]</th>
+	<th>FULLRANK [5]</th>
+  </tr>
+  <tr>
+	<td><a href="./2mix4src250ms/duet-mvdr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src250ms/duet-isr/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src250ms/duet/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src250ms/multi_nmf/demixed1.wav">demix1</a></td>
+	<td><a href="./2mix4src250ms/fullrank/demixed1.wav">demix1</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix4src250ms/duet-mvdr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src250ms/duet-isr/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src250ms/duet/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src250ms/multi_nmf/demixed2.wav">demix2</a></td>
+	<td><a href="./2mix4src250ms/fullrank/demixed2.wav">demix2</a></td>
+  </tr>
+    <tr>
+	<td><a href="./2mix4src250ms/duet-mvdr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src250ms/duet-isr/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src250ms/duet/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src250ms/multi_nmf/demixed3.wav">demix3</a></td>
+	<td><a href="./2mix4src250ms/fullrank/demixed3.wav">demix3</a></td>
+  </tr>
+      <tr>
+	<td><a href="./2mix4src250ms/duet-mvdr/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src250ms/duet-isr/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src250ms/duet/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src250ms/multi_nmf/demixed4.wav">demix4</a></td>
+	<td><a href="./2mix4src250ms/fullrank/demixed4.wav">demix4</a></td>
+  </tr>
+</table>
+
+<h2>Reference</h2>
+<ul>
+  <li>[1] Scott Rickard, The DUET Blind Source Separation Algorithm, pp. 217–241, Springer Netherlands, Dordrecht, 2007.</li>
+  <li>[2] Taesu Kim, Torbjørn Eltoft, and Te-Won Lee, “Independent vector analysis: An extension of ica to multivariate components,” in Independent Component Analysis and Blind Signal Separation, Justinian Rosca, Deniz Erdogmus, José C. Prı́ncipe, and Simon Haykin, Eds., Berlin, Heidelberg, 2006, pp. 165–172, Springer Berlin Heidelberg.</li>
+  <li>[3] Daichi Kitamura, Nobutaka Ono, Hiroshi Sawada, Hirokazu Kameoka, and Hiroshi Saruwatari, “Determined blind source separation unifying independent vector analysis and nonnegative matrix factorization,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 24, no. 9, pp. 1626–1641, 2016.</li>
+  <li>[4] A. Ozerov and C. Fevotte, "Multichannel nonnegative matrix factorization in convolutive mixtures for audio source separation," IEEE Trans. on Audio, Speech and Lang. Proc. special issue on Signal Models and Representations of Musical and Environmental Sounds, vol. 18, no. 3, pp. 550-563, March 2010.</li>
+  <li>[5] N. Q. K. Duong, E. Vincent and R. Gribonval, "Under-determined reverberant audio source separation using a full-rank spatial covariance model", IEEE Transactions on Audio, Speech and Language Processing, 2010</li>
+
+</ul>
 
 </body>
 </html>
