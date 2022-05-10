@@ -261,7 +261,59 @@ table, th, td {
 	<td><a href="./2mix4src250ms/fullrank/demixed4.wav">demix4</a></td>
   </tr>
 </table>
+<h2>Computational time</h2>
+	<table style="width:100%">
+		<tr>
+		<th>Algorithms</th>
+		<th>2 sources</th>
+		<th>3 sources</th>
+		<th>4 sources</th>
+  </tr>
+  		<tr>
+		<th>DUET-MVDR</th>
+		<th>0.74 s</th>
+		<th>0.84 s</th>
+		<th>0.96 s</th>
+	</tr>
+	  	<tr>
+		<th>DUET-ISR</th>
+		<th>0.73 s</th>
+		<th>1.00 s</th>
+		<th>1.01 s</th>
+	</tr>
+		<tr>
+		<th>DUET [1]</th>
+		<th>0.10 s</th>
+		<th>0.14 s</th>
+		<th>0.18 s</th>
+	</tr>
+		<tr>
+		<th>IVA [2]</th>
+		<th>3.40 s</th>
+		<th>\</th>
+		<th>\</th>
+	</tr>
+		<tr>
+		<th>ILRMA [3]</th>
+		<th>8.39 s</th>
+		<th>\</th>
+		<th>\</th>
+	</tr>
+		<tr>
+		<th>MULTI_NMF [4]</th>
+		<th>\</th>
+		<th>32.85 s</th>
+		<th>43.54 s</th>
+	</tr>
+		<tr>
+		<th>FULLRANK [5]</th>
+		<th>\</th>
+		<th>575.32 s</th>
+		<th>585.39 s</th>
+	</tr>
 
+	</table>
+	
 <h2>Reference</h2>
 <ul>
   <li>[1] Scott Rickard, The DUET Blind Source Separation Algorithm, pp. 217–241, Springer Netherlands, Dordrecht, 2007.</li>
