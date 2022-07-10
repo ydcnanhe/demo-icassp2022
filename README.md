@@ -5,3 +5,5 @@ He, Yudong, He Wang, Qifeng Chen, and Richard HY So. "Harvesting Partially-Disjo
 # Matlab code is available!
 We have open-sourceed our Matlab codes for all blind source algorithms that we used in our paper.
 Please find them on https://github.com/ydcnanhe/codes-icassp-2022
+# Contact
+Yudong He, email: yhebh@connect.ust.hk
