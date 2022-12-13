@@ -1,5 +1,5 @@
 # Demo-icassp2022
-This repository contains the demo, separated audio signals, of our proposed algorithm submitted to ICASSP 2022 and other blind source separation algorithms.
+This repository contains the demo of our proposed blind source separation (BSS) algorithm submitted to ICASSP 2022. Other BSS algorithms can be also found here.
 # Our paper
 He, Yudong, He Wang, Qifeng Chen, and Richard HY So. "Harvesting Partially-Disjoint Time-Frequency Information for Improving Degenerate Unmixing Estimation Technique." In ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 506-510. IEEE, 2022.
 # Matlab code is available!
